@@ -1,6 +1,9 @@
-<div>
-  <mat-card>
-    <mat-toolbar>Login</mat-toolbar>
+<div class="main-container"
+     appImageMinSrc
+     lazyImageSrc="assets/images/login-background.png"
+     defaultImageSrc="assets/images/login-background-min.png">
+  <mat-card class="login-card">
+    <mat-toolbar class="login-header">Login</mat-toolbar>
 
     <mat-form-field>
       <mat-label>Username</mat-label>
@@ -11,6 +14,8 @@
       <mat-label>Password</mat-label>
       <input matInput type="password">
     </mat-form-field>
+
+    <button mat-raised-button>Sign in</button>
   </mat-card>
 </div>
 
