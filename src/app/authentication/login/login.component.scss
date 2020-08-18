@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: cover;
-  //background: url("~assets/images/login-background.png") center no-repeat;
+  background: rgb(176,136,154);
+  background: radial-gradient(circle, rgba(176,136,154,1) 0%, rgba(14,90,179,1) 100%);
 
   .login-card {
     display: flex;
