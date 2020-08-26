@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   public login(): void {
-    this.router.navigateByUrl('layout');
+    this.router.navigateByUrl('/layout/dashboard');
   }
 }

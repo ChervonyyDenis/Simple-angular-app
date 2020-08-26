@@ -1,3 +1,9 @@
 <div class="container">
-
+  <app-logo></app-logo>
+  <ul class="nav">
+    <li class="nav-item" *ngFor="let item of navItems">{{item.name}}</li>
+  </ul>
+  <div class="logout-wrapper" (click)="logOut()">
+    <img src="assets/images/logout.png" alt="Logout">
+  </div>
 </div>

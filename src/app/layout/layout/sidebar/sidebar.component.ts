@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  public menuItems = [
+    {name: 'Dashboard', link: 'dashboard'},
+    {name: 'Feedback', link: 'feedback'},
+  ];
 
   constructor() { }
 

@@ -1,0 +1,17 @@
+<mat-card class="feedback-card">
+  <h1 class="title">Send us feedback</h1>
+  <mat-form-field>
+    <mat-label>Subject: </mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Message: </mat-label>
+    <textarea class="message"
+              matInput
+              rows="15"
+              maxlength="1500"
+              #message></textarea>
+    <mat-hint align="end">{{message.value.length}} / 1500</mat-hint>
+  </mat-form-field>
+  <button mat-raised-button>Send</button>
+</mat-card>

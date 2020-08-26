@@ -1,0 +1,71 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .logoIcon {
+    position: relative;
+    width: 40px;
+    height: 50px;
+
+    .tower1 {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #545353;
+    }
+    .tower2 {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      width: 10px;
+      height: 20px;
+      background-color: #4848ef;
+    }
+    .tower3 {
+      position: absolute;
+      top: 0;
+      left: 30px;
+      width: 10px;
+      height: 30px;
+      background-color: #4cab4c;
+    }
+    .tower4 {
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 10px;
+      height: 5px;
+      background-color: #d4d2d2;
+    }
+    .tower5 {
+      position: absolute;
+      top: 32px;
+      left: 15px;
+      width: 10px;
+      height: 10px;
+      background-color: #AAD;
+    }
+    .tower6 {
+      position: absolute;
+      top: 32px;
+      left: 30px;
+      width: 10px;
+      height: 15px;
+      background-color: #ADA;
+    }
+  }
+
+  .logoName {
+    line-height: 35px;
+    font-size: 30px;
+    background: #000;
+    user-select: none;
+    background: -webkit-linear-gradient(left, #545353, #4848ef, #4cab4c, #e0bcbc, #AAD, #ADA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

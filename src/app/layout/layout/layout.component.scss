@@ -1,8 +1,16 @@
-.content {
-  position: absolute;
-  height: calc(100vh - 75px);
-  width: 80vw;
-  right: 0;
-  top: 75px;
-  background-color: #ffffff;
+.layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  .content {
+    position: absolute;
+    height: calc(100vh - 75px);
+    width: 80vw;
+    right: 0;
+    top: 75px;
+    background-color: #dadada;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 }

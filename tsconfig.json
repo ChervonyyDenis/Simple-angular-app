@@ -23,7 +23,9 @@
       "@environments/*": ["environments/*"],
       "@authentication/*": ["app/authentication/*"],
       "@shared/*": ["app/core/shared/*"],
-      "@layout/*": ["app/layout/*"]
+      "@layout/*": ["app/layout/*"],
+      "@dashboard/*": ["app/dashboard/*"],
+      "@feedback/*": ["app/feedback/*"]
     }
   },
   "angularCompilerOptions": {

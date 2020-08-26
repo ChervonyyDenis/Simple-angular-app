@@ -1,0 +1,12 @@
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+  }
+
+  .message {
+    resize: none;
+  }
+}

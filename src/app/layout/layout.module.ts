@@ -1,28 +1,26 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '@shared/modules/shared.module';
 import {LayoutComponent} from '@layout/layout/layout.component';
 import {SidebarComponent} from '@layout/layout/sidebar/sidebar.component';
 import {NavbarComponent} from '@layout/layout/navbar/navbar.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: LayoutComponent
-  }
-];
+import {LayoutRoutingModule} from '@layout/layout-routing.module';
+import { NotificationsComponent } from '@layout/layout/notifications/notifications.component';
+import {NotificationsService} from '@shared/services/notifications.service';
 
 @NgModule({
   declarations: [
     LayoutComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    NotificationsComponent,
   ],
   imports: [
     SharedModule,
-    RouterModule.forChild(routes)
+    LayoutRoutingModule
+  ],
+  providers: [
+    NotificationsService
   ]
 })
 
-export class LayoutModule {
-}
+export class LayoutModule {}
