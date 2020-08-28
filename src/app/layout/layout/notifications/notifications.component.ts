@@ -16,13 +16,17 @@ export class NotificationsComponent implements OnInit {
     this.notifications = [];
 
     this.notificationsService.subject.subscribe((notification) => {
-      this.notifications.push(notification);
+      if (this.notifications.length === 3) {
+        this.notifications.pop();
+      }
+
+      this.notifications.unshift(notification);
 
       setTimeout(() => {
         this.notifications = this.notifications.filter(next => {
           return next !== notification;
         });
-      }, 400000000);
+      }, 4000);
     });
   }
 
@@ -41,21 +45,4 @@ export class NotificationsComponent implements OnInit {
         return 'status-warning';
     }
   }
-
-  public getStringType(notification: Notification): string {
-    if (!notification) {
-      return;
-    }
-    switch (notification.type) {
-      case NotificationType.Success:
-        return 'Success';
-      case NotificationType.Error:
-        return 'Error';
-      case NotificationType.Info:
-        return 'Info';
-      case NotificationType.Warning:
-        return 'Warning';
-    }
-  }
-
 }

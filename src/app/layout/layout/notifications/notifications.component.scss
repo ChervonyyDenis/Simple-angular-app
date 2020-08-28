@@ -2,26 +2,33 @@
   position: absolute;
   top: 100px;
   left: 50%;
+  background-color: transparent;
   transform: translateX(-50%);
-  border-radius: 10px;
   z-index: 99;
+  width: 500px;
+  transition: height 1s;
 
   .notification {
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
+    margin: 10px 0;
 
     &.status-success {
-      background-color: #51A351;
+      background-color: rgba(81, 163, 81, 0.85);
+      border: 2px solid rgb(81, 163, 81);
     }
     &.status-error {
-      background-color: #BD362F;
+      background-color: rgba(189, 54, 47, 0.85);
+      border: 2px solid rgb(189, 54, 47);
     }
     &.status-info {
-      background-color: #2F96B4;
+      background-color: rgba(47, 150, 180, 0.85);
+      border: 2px solid rgb(47, 150, 180);
     }
     &.status-warning {
-      background-color: #F89406;
+      background-color: rgba(248, 148, 6, 0.85);
+      border: 2px solid rgb(248, 148, 6);
     }
 
     .notification-type {

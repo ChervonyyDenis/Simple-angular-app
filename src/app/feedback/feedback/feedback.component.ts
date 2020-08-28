@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NotificationsService} from '@shared/services/notifications.service';
 
 @Component({
   selector: 'app-feedback',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackComponent implements OnInit {
 
-  constructor() { }
+  constructor(private notifications: NotificationsService) { }
 
   ngOnInit(): void {
   }
 
+  sendMessage(): void {
+    this.notifications.success('Message sent successfully');
+  }
 }
